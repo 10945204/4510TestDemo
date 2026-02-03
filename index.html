@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carmen Bleach | Portfolio</title>
+    <style>
+        :root {
+            /* Monochromatic Blue Palette */
+            --primary: #003366;
+            --secondary: #00509d;
+            --accent: #0077b6;
+            --light-blue: #caf0f8;
+            --bg: #f8fbff;
+            --text: #1a1a1a;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        }
+
+        /* Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 1rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--secondary);
+            text-align: center;
+        }
+
+        /* Experience Section */
+        .experience-card {
+            background: white;
+            padding: 1.5rem;
+            border-left: 5px solid var(--accent);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 1.1rem;
+        }
+
+        .job-meta {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-tag {
+            display: inline-block;
+            background: var(--light-blue);
+            color: var(--primary);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin: 0.2rem;
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+            border-top: 1px solid #ddd;
+        }
+
+        .resume-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .resume-link:hover {
+            background-color: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Carmen Bleach</h1>
+    <p>Management & Technical Operations Professional</p>
+</header>
+
+<div class="container">
+    
+    <section id="portfolio">
+        <h2>Visual Portfolio</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="IMG_3076.HEIC" alt="Portfolio Image 3076">
+                <div class="gallery-caption">Project Visualization I</div>
+            </div>
+            <div class="gallery-item">
+                <img src="IMG_4163.HEIC" alt="Portfolio Image 4163">
+                <div class="gallery-caption">Project Visualization II</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Highlights</h2>
+        
+        <div class="experience-card">
+            <div class="job-title">Technical Merchandiser | Be Fulfilled, LLC</div>
+            <div class="job-meta">10/2020 – Present</div>
+            <p>Managing Shopify website infrastructure and implementing ShipHero 3PL software for multiple clients.</p>
+        </div>
+
+        <div class="experience-card">
+            <div class="job-title">Bookkeeper | My Cents of Style, LLC</div>
+            <div class="job-meta">08/2019 – 03/2020</div>
+            <p>Expertise in QuickBooks reconciliations and auditing fulfillment and ad hoc charges.</p>
+        </div>
+
+        <div class="experience-card">
+            <div class="job-title">General Manager | Petco Animal Supplies, INC</div>
+            <div class="job-meta">06/2003 – 06/2015</div>
+            <p>Directed teams of up to 25 and managed regional merchandising projects for 16 store locations.</p>
+        </div>
+
+        <a href="Carmen Bleach Resume.docx" class="resume-link">Download Full Resume</a>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="experience-card" style="border-left-color: var(--primary);">
+            <div class="job-title">Utah Valley University</div>
+            <p><strong>A.S. in Business Management</strong></p>
+            <p>GPA 3.64 | University Advanced Standing</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Carmen Bleach | Orem, UT</p>
+</footer>
+
+</body>
+</html>
